@@ -1,0 +1,116 @@
+#contentfm {
+    display: flex;
+    #pnlContentForm {
+        background-color: white;
+        padding: 0 24px; 
+        padding-top: 80px;
+        border-top-right-radius: 60px;
+        border-top-left-radius: 60px;
+        box-shadow: -6px 0px 10px rgba( 0, 0, 0, 0.15);
+        margin-top: 50vh;
+        position: relative;
+        z-index: 10;
+        .container-fluid .row {
+            .col-12 {
+                input, textarea, #lblCoodenadaY, #lblCoodenadaX{
+                    border: 1px solid #EAEAEA!important;
+                    border-radius: 6px!important;
+                    height: 40px!important;
+                    box-sizing: border-box;
+                }
+                input, textarea {
+                    padding: 16px!important;
+                }
+                label{
+                    font-size: 16px!important;
+                    color: #7d9ab3!important;
+                    background-color: white!important;
+                    text-transform: capitalize!important;
+                    margin: -4px 0;
+                    margin-left: 4px; 
+                    &.active{
+                        padding: 3px 7px;
+                    }
+                }
+                .alert-validacion-formulario{
+                    box-shadow: none;
+                    margin-top:4px!important;
+                    font-size: 14px;
+                }
+                .md-form{
+                    margin-top: 0!important;
+                }
+                .form-group{
+                    margin-bottom: 16px!important;
+                    &:nth-child(4){
+                        .row {
+                            width: 100%;
+                            .col-3{
+                                &:not(:first-child):not(:last-child)
+                                    input{
+                                        border-right: 0!important;
+                                        border-left: 0!important;
+                                        border-radius: 0!important;
+                                    }
+                                &:first-child{
+                                    input{
+                                        border-top-right-radius: 0!important;
+                                        border-bottom-right-radius: 0!important;
+                                        border-right: 0!important;
+                                    }
+                                }
+                                &:last-child{
+                                    input{
+                                        border-top-left-radius: 0!important;
+                                        border-bottom-left-radius: 0!important;
+                                        border-left: 0!important;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    &:nth-child(6){
+                        .input-group{
+                            gap: 16px;
+                        }
+                        #lblCoodenadaY, #lblCoodenadaX {
+                            background-color: #e8f4f4!important;
+                            border-color: #e8f4f4!important;
+                            color: #072146!important;
+                            font-size: 16px!important;
+                            text-align: center!important;
+                            text-transform: capitalize!important;
+                            padding: 6px 0;
+        
+                        }
+                    }
+                    &:last-child{
+                        >div{
+                            width: 100%;
+                            #btnLimpiarFormulario, #btnLimpiarFormulario span{
+                                background-color: #e8f4f4!important;
+                                border-color: #e8f4f4!important;
+                                color: #072146!important;
+                                font-size: 16px!important;
+                                text-align: center!important;
+                                text-transform: capitalize!important;
+                                box-shadow: none;
+                                width: 100%;
+                            }
+                        }
+                    }
+                }
+                
+            }
+        }
+    };
+    #pnlContentMap{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        margin-top: -25vh;
+        z-index: 0;
+    };
+}
